@@ -113,11 +113,6 @@ span {
 .banner {
   display: flex;
   height: 80rem;
-  background-image: url(/src/img/banner-top-img.png);
-  background-blend-mode: normal;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
   margin-top: 10rem;
   margin-left: 19rem;
   margin-right: 19rem;
@@ -160,6 +155,7 @@ span {
   grid-row-start: 2;
   grid-row-end: 3;
   gap: 2rem;
+  margin-top: 5rem;
 }
 .catalog .btn-secondary {
   grid-column-start: 2;
@@ -199,6 +195,240 @@ span {
   color: #B9836D;
   margin-bottom: 3rem;
 }
+.specifies {
+  display: grid;
+  grid-template-columns: 3fr 3fr 1fr;
+  grid-template-rows: 1fr;
+  padding-left: 19rem;
+  padding-right: 19rem;
+  height: 82rem;
+  flex-wrap: wrap;
+  background-image: url(/src/img/specifies-img-bg.jpg);
+  background-size: cover;
+  justify-items: start;
+  align-items: center;
+}
+.specifies-img {
+  width: 100%;
+  height: 100%;
+  background-image: url(/src/img/specifies-img-grave.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 47rem;
+}
+.specifies-content {
+  width: 41.5rem;
+}
+.warranty {
+  display: flex;
+  width: 40rem;
+  height: 10rem;
+  border: 1px dashed #B9836D;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin-top: 12.5rem;
+}
+.warranty a {
+  color: #FFF;
+}
+.warranty p {
+  line-height: 2.5rem;
+}
+.warranty span {
+  font-weight: 400;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+.specifies-list {
+  display: flex;
+  height: 81%;
+  /* align-self: center; */
+  text-align: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 69%;
+  margin-top: 6rem;
+  align-content: flex-start;
+  min-width: 10rem;
+  margin-bottom: 0rem;
+}
+.specifies-list ul {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0rem;
+}
+.specifies-list li {
+  list-style: none;
+  line-height: 2rem;
+}
+.examples {
+  display: flex;
+  height: 66.5rem;
+}
+.examples-gallery {
+  width: 50%;
+  background-image: url(/src/img/examples-gallery-img.png);
+}
+.examples-text {
+  width: 50%;
+  background-image: url(/src/img/examples-text-img.png);
+  background-repeat: no-repeat;
+  display: flex;
+  background-position: right bottom;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.examples-text-items {
+  width: 55%;
+  height: fit-content;
+  min-width: 45rem;
+  margin: 16rem 6rem;
+}
+.service {
+  display: flex;
+  height: 66.5rem;
+  background-image: url(/src/img/service-img-bg.png);
+}
+.service-gallery {
+  width: 50%;
+  background-image: url(/src/img/service-img-grave.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.service-text {
+  width: 50%;
+  display: flex;
+  background-position: right bottom;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.service-text-items {
+  width: 55%;
+  height: fit-content;
+  min-width: 45rem;
+  margin: 5rem 19rem;
+  z-index: 1;
+}
+.service-text-items h2 {
+  width: 150%;
+  margin-top: 0rem;
+}
+.about-us {
+  display: flex;
+  height: 66.5rem;
+}
+.about-us-gallery {
+  width: 50%;
+  background-image: url(/src/img/about-us-gallery-img.png);
+}
+.about-us-text {
+  width: 50%;
+  display: flex;
+  background-position: right bottom;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.about-us-text-items {
+  width: 55%;
+  height: fit-content;
+  min-width: 45rem;
+  margin: 16rem 6rem;
+}
+.about-us-text-items strong {
+  color: #B9836D;
+}
+.uq-design {
+  display: flex;
+  height: 66.5rem;
+  background-image: url(/src/img/uq-design-img-bg.png);
+  background-position-x: -18rem;
+}
+.uq-design-gallery {
+  width: 50%;
+}
+.uq-design-text {
+  width: 100%;
+  display: flex;
+  background-position: right bottom;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-image: url(/src/img/uq-design-img-grave.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: right;
+}
+.uq-design-text-items {
+  width: 35%;
+  height: fit-content;
+  min-width: 45rem;
+  margin: 5rem 19rem;
+  z-index: 1;
+}
+.uq-design-text-items h2 {
+  width: 150%;
+  margin-top: 0rem;
+}
+.header-banner-bg {
+  background-image: url(/src/img/banner-top-img.png), url(/src/img/header-and-banner-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+  background-position: right, center;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+.footer-adress {
+  display: flex;
+  width: 45rem;
+  height: auto;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+.footer-adress .footer-img {
+  width: 5rem;
+  height: 5rem;
+  background-image: url(/src/img/header-logo.svg);
+  background-size: contain;
+}
+.footer-adress p {
+  width: 24rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+p#question {
+  font-family: 'Futura PT';
+  font-style: 'Book';
+  font-size: 3rem;
+  font-weight: 400;
+}
+.footer-phone > a {
+  text-decoration: none;
+  color: #ffffff;
+}
 h1 {
   font-family: 'SangBleu Sunrise';
   font-weight: 300;
@@ -210,10 +440,15 @@ h2 {
   font-weight: 400;
   line-height: 100%;
   font-size: 4.5rem;
+  margin-bottom: 0rem;
+}
+h2#lined {
   text-decoration-line: underline;
   text-decoration-color: #B9836D;
   text-underline-position: under;
   text-decoration-thickness: 0.125rem;
+  margin-top: 0rem;
+  margin-bottom: 4.5rem;
 }
 p {
   font-family: 'Futura PT';
@@ -230,6 +465,7 @@ body {
   font-size: 16px;
   color: #ffffff;
   background-color: #1F1F1F;
+  margin-top: -6rem;
 }
 .wrapper {
   max-width: 1280px;

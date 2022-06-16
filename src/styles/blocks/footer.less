@@ -1,0 +1,45 @@
+// main: ../style.less
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.footer-adress{
+    display: flex;
+    width: 45rem;
+    height: auto;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+
+    .footer-img{
+        width: 5rem;
+        height: 5rem;
+        background-image: url(/src/img/header-logo.svg);
+        background-size: contain;
+    }
+
+    p{
+        width: 24rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+}
+
+p#question{
+    font-family: 'Futura PT';
+    font-style: 'Book';
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.footer-phone> a{
+    text-decoration: none;
+    color: #ffffff;
+}
