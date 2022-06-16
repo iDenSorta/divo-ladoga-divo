@@ -1,0 +1,65 @@
+// main: ../style.less
+
+.catalog{
+    display: grid;
+    margin-left: 19rem;
+    margin-right: 19rem;   
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr;
+    align-content: center;
+    align-items: center;
+    
+
+    .catalog-items{
+        display: flex;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        gap: 2rem;  
+    }
+    .btn-secondary{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        justify-self: end;
+    }
+
+    .catalog-item{
+        display: flex;
+        position: relative;
+        height: 45rem;
+        border: 2px solid #B9836D;
+        flex-direction: column;
+        padding: 2rem;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+    }
+
+    .catalog-item-img{
+        position: absolute;
+        top: -8rem;
+        left: 4rem;
+        right: 0rem;
+        bottom: 0rem;
+
+    }
+
+    p{
+        font-family: 'Futura PT';
+        font-size: 2.5rem;
+        width: 80%;
+        margin-top: 0rem;
+        margin-bottom: 3rem;
+    }
+
+    span{
+        font-family: 'Futura PT';
+        font-size: 3rem;
+        font-weight: 500;
+        width: 80%;
+        margin-top: 0rem;
+        color: #B9836D;
+        margin-bottom: 3rem;
+    }
+}

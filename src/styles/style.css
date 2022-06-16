@@ -1,3 +1,262 @@
+@font-face {
+  font-family: 'Futura PT Demi';
+  src: local('Futura PT Demi'), local('FuturaPT-Demi'), url('../fonts/FuturaPT-Demi.woff2') format('woff2'), url('../fonts/FuturaPT-Demi.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Futura PT';
+  src: local('Futura PT Medium'), local('FuturaPT-Medium'), url('../fonts/FuturaPT-Medium.woff2') format('woff2'), url('../fonts/FuturaPT-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Futura PT';
+  src: local('Futura PT Light'), local('FuturaPT-Light'), url('../fonts/FuturaPT-Light.woff2') format('woff2'), url('../fonts/FuturaPT-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SangBleu Sunrise';
+  src: local('SangBleu Sunrise'), local('SangBleuSunrise-Regular'), url('../fonts/SangBleuSunrise-Regular.woff2') format('woff2'), url('../fonts/SangBleuSunrise-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Futura PT Book';
+  src: local('Futura PT Book'), local('FuturaPT-Book'), url('../fonts/FuturaPT-Book.woff2') format('woff2'), url('../fonts/FuturaPT-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Futura PT';
+  src: local('Futura PT Bold'), local('FuturaPT-Bold'), url('../fonts/FuturaPT-Bold.woff2') format('woff2'), url('../fonts/FuturaPT-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+.header {
+  display: grid;
+  max-width: 160rem;
+  grid-template-columns: 63px 11fr;
+  grid-template-rows: 49% 2% 49%;
+  grid-column-gap: 20px;
+  margin-left: 19rem;
+  margin-right: 19rem;
+  margin-top: 6rem;
+}
+.header-logo {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background-image: url(/src/img/header-logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.nav {
+  display: flex;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  list-style: none;
+  gap: 2.5rem;
+  padding: 0px;
+}
+.row-border {
+  background: #B9836D;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.upper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.5rem;
+}
+span {
+  font-size: 2rem;
+}
+.nav-item#contacts {
+  text-align: right;
+  flex-grow: 20;
+}
+.nav-item a {
+  text-decoration: underline;
+  color: #ffffff;
+  text-underline-position: under;
+  text-decoration-thickness: 0.125rem;
+}
+.nav-item {
+  flex-grow: 1;
+}
+.upper-text {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.upper a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.banner {
+  display: flex;
+  height: 80rem;
+  background-image: url(/src/img/banner-top-img.png);
+  background-blend-mode: normal;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  margin-top: 10rem;
+  margin-left: 19rem;
+  margin-right: 19rem;
+}
+.banner .banner-text {
+  width: 54rem;
+  height: 47rem;
+}
+.banner .banner-text > p {
+  width: 70%;
+  height: fit-content;
+  margin-bottom: 0rem;
+}
+.banner .underline {
+  width: 37%;
+  height: 1rem;
+  background-image: url(/src/img/banner-top-underline.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-left: 19%;
+  margin-bottom: 4rem;
+}
+.banner .banner > h1 {
+  font-size: 8rem;
+}
+.catalog {
+  display: grid;
+  margin-left: 19rem;
+  margin-right: 19rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 5fr;
+  align-content: center;
+  align-items: center;
+}
+.catalog .catalog-items {
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  gap: 2rem;
+}
+.catalog .btn-secondary {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  justify-self: end;
+}
+.catalog .catalog-item {
+  display: flex;
+  position: relative;
+  height: 45rem;
+  border: 2px solid #B9836D;
+  flex-direction: column;
+  padding: 2rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.catalog .catalog-item-img {
+  position: absolute;
+  top: -8rem;
+  left: 4rem;
+  right: 0rem;
+  bottom: 0rem;
+}
+.catalog p {
+  font-family: 'Futura PT';
+  font-size: 2.5rem;
+  width: 80%;
+  margin-top: 0rem;
+  margin-bottom: 3rem;
+}
+.catalog span {
+  font-family: 'Futura PT';
+  font-size: 3rem;
+  font-weight: 500;
+  width: 80%;
+  margin-top: 0rem;
+  color: #B9836D;
+  margin-bottom: 3rem;
+}
+h1 {
+  font-family: 'SangBleu Sunrise';
+  font-weight: 300;
+  line-height: 135%;
+  font-size: 6rem;
+}
+h2 {
+  font-family: 'SangBleu Sunrise';
+  font-weight: 400;
+  line-height: 100%;
+  font-size: 4.5rem;
+  text-decoration-line: underline;
+  text-decoration-color: #B9836D;
+  text-underline-position: under;
+  text-decoration-thickness: 0.125rem;
+}
+p {
+  font-family: 'Futura PT';
+  font-size: 2rem;
+  line-height: 3.5rem;
+}
+html {
+  font-size: 8px;
+  font-family: 'Futura PT';
+  font-weight: 300;
+}
 body {
   background-color: aquamarine;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #1F1F1F;
+}
+.wrapper {
+  max-width: 1280px;
+  margin: auto;
+}
+.btn {
+  display: flex;
+  width: 208px;
+  height: 50px;
+  background-color: #B9836D;
+  justify-content: center;
+  align-items: center;
+}
+.btn > a {
+  color: #FDFDFD;
+  text-decoration: none;
+}
+.btn-secondary {
+  display: flex;
+  width: 192px;
+  height: 46px;
+  border: 2px solid #B9836D;
+  justify-content: center;
+  align-items: center;
+}
+.btn-secondary > a {
+  color: #B9836D;
+  text-decoration: none;
+  font-size: 2rem;
 }

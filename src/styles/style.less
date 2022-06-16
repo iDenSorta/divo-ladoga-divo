@@ -1,3 +1,82 @@
+@import "fonts";
+@import "blocks/header";
+@import "blocks/banner-top";
+@import "blocks/catalog";
+
+
+h1{
+    font-family: 'SangBleu Sunrise';
+    font-weight: 300;
+    line-height: 135%;
+    font-size: 6rem;
+}
+
+h2{
+    font-family: 'SangBleu Sunrise';
+    font-weight: 400;
+    line-height: 100%;
+    font-size: 4.5rem;
+    text-decoration-line: underline;
+    text-decoration-color: #B9836D;
+    text-underline-position: under;
+    text-decoration-thickness: 0.125rem;
+
+}
+
+p{
+    font-family: 'Futura PT';
+    font-size: 2rem;
+    line-height: 3.5rem;
+    
+}
+
+html{
+    font-size: 8px;
+    font-family: 'Futura PT';  
+    font-weight: 300;
+   
+}
+
 body {
     background-color: aquamarine;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #1F1F1F;
+    ;
+}
+
+.wrapper{
+    max-width: 1280px;
+    margin: auto;
+}
+
+.btn{
+    display: flex;
+    width: 208px;
+    height: 50px;
+    background-color: #B9836D;
+    justify-content: center;
+    align-items: center;
+    
+
+    &>a{
+    color: #FDFDFD;
+    text-decoration: none;
+    }
+}
+
+.btn-secondary{
+    display: flex;
+    width: 192px;
+    height: 46px;
+    border: 2px solid #B9836D;
+    justify-content: center;
+    align-items: center;
+    
+
+    &>a{
+    color: #B9836D;
+    text-decoration: none;
+    font-size: 2rem;
+    }
 }
