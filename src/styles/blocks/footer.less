@@ -2,10 +2,58 @@
 
 .footer{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 3fr 4fr;
+    grid-template-rows: 2fr 2fr 1fr 2fr;
+    max-width: 122rem;
+    margin: auto;
+    margin-top: 3rem;
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    input{
+        width: 34rem;
+        height: 5.5rem;
+        border: 2px solid #B9836D;
+        background-color: #1F1F1F;
+        color: hsla(0, 0%, 100%, 0.5);
+        font-family: 'Futura PT';
+        font-style: 'Light';
+        font-size: 2rem;
+        line-height: 2.5rem;
+        text-align: center;
+        font-weight: 300;
+        outline: none;
+        
+    }
+
+    form{
+        margin-top: 0.5rem;
+        display: flex;
+        gap: 2rem;
+        justify-content: right;
+
+        .btn{
+            width: 195px;
+        }
+    }
 }
 
+
+a[href^="mailto"] {
+    margin-left: 1rem;
+    text-decoration: none;
+    font-family: 'Futura PT';
+    font-style: 'Book';
+    font-size: 3rem;
+    font-weight: 400;
+    color: #fff;
+}
 .footer-adress{
     display: flex;
     width: 45rem;
@@ -16,6 +64,7 @@
     align-items: center;
     justify-content: flex-start;
     gap: 2rem;
+    margin-left: 1rem;
 
     .footer-img{
         width: 5rem;
@@ -37,9 +86,46 @@ p#question{
     font-style: 'Book';
     font-size: 3rem;
     font-weight: 400;
+    text-align: right;
 }
 
-.footer-phone> a{
-    text-decoration: none;
-    color: #ffffff;
+.footer-phone{
+
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+
+    a{
+        text-decoration: none;
+        color: #B9836D;
+        font-family: 'Futura PT';
+        font-style: Demi;
+        font-size: 5.25rem;
+        line-height: 100%;
+        font-weight: 500;
+    }
 }
+p#all-rights{
+    text-decoration: none;
+    font-family: 'Futura PT';
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+    color: hsla(0, 0%, 100%, 0.5);
+    padding: 1rem;
+
+}
+
+a#politics{
+    text-decoration: underline;
+    text-underline-position: under;
+    font-family: 'Futura PT';
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+    color: #fff;
+    text-align: right;
+    margin-right: 17rem;
+    
+}
+
+

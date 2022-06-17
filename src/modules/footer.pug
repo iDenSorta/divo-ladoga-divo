@@ -5,15 +5,23 @@ footer
                 .footer-img
                 p Респ.Карелия, г. Сортавала ул. Ладожская, д 24
             p#question Есть вопросы? Оставьте заявку и мы перезвоним!
-            a(href="tel:+7 999 345-55-55") +7 (999) 345-55-55
-            form(role='form' method='GET' action='#')
-                input#phone.form-control(type='tel', placeholder='phone' name='phone')
-                button.btn(type="submit", name="asdf") Оставить заявку
-            p pamyatniksortavala@mail.ru
             .footer-phone
-                a(href="#") Политика конфиденциальности
-            p All rights reserved. PamyatnikSortavala 2022
-            ul
-                li КАТАЛОГ
-                li ПРИМЕРЫ РАБОТ 
-                li  ЗАКАЗАТЬ СВОЙ ДИЗАЙН
+                a(href="tel:+7 999 345-55-55") +7 (999) 345-55-55
+            .form-callback
+                form(role='form' method='GET' action='#')
+                    input#phone.form-control(type='tel', placeholder='+7 (999) 999-99-99' name='phone')
+                    button.btn(type="submit", name="callback") Оставить заявку
+            a(href="mailto:") pamyatniksortavala@mail.ru
+            
+            a#politics(href="#") Политика конфиденциальности
+            p#all-rights All rights reserved. PamyatnikSortavala 2022
+            nav
+                ul.nav
+                    li.nav-item#catalog
+                        a(href="").nav-link КАТАЛОГ
+                    li.nav-item#samples 
+                        a(href="").nav-link ПРИМЕРЫ РАБОТ
+                    li.nav-item#order 
+                        a(href="").nav-link ЗАКАЗАТЬ СВОЙ ДИЗАЙН
+                    li.nav-item#contacts 
+                    

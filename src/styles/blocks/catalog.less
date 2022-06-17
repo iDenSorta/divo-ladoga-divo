@@ -8,6 +8,8 @@
     grid-template-rows: 1fr 5fr;
     align-content: center;
     align-items: center;
+    margin-top: 13rem;
+    margin-bottom: 14rem;
     
 
     .catalog-items{
@@ -17,12 +19,14 @@
         grid-row-start: 2;
         grid-row-end: 3;
         gap: 2rem; 
-        margin-top: 5rem;
+        margin-top: 6rem;
     }
     .btn-secondary{
         grid-column-start: 2;
         grid-column-end: 3;
         justify-self: end;
+        align-self: baseline;
+        width: 172px;
     }
 
     .catalog-item{
@@ -34,6 +38,11 @@
         padding: 2rem;
         flex-wrap: wrap;
         justify-content: flex-end;
+
+        .btn-secondary{
+            width: 192px;
+        }
+
 
     }
 
@@ -51,7 +60,7 @@
         font-size: 2.5rem;
         width: 80%;
         margin-top: 0rem;
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
     }
 
     span{
@@ -61,6 +70,6 @@
         width: 80%;
         margin-top: 0rem;
         color: #B9836D;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
 }

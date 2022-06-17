@@ -3,7 +3,7 @@
 
 .specifies{
     display: grid;
-    grid-template-columns: 3fr 3fr 1fr;
+    grid-template-columns: 4fr 3fr 1fr;
     grid-template-rows: 1fr;
     padding-left: 19rem;
     padding-right: 19rem;
@@ -18,15 +18,17 @@
 
 .specifies-img{
     width: 100%;
-    height: 100%;
+    height: 78%;
     background-image: url(/src/img/specifies-img-grave.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     min-width: 47rem;
+    align-content: space-around;
 }
 
 .specifies-content{
     width: 41.5rem;
+    height: 64rem;
 }
 
 .warranty{
@@ -37,7 +39,7 @@
     align-items: center;
     align-content: center;
     text-align: center;
-    margin-top: 12.5rem;
+    margin-top: 11.5rem;
 
     a{
         color: #FFF;
@@ -57,25 +59,25 @@
 
 .specifies-list{
     display: flex;
-    height: 81%;
-    /* align-self: center; */
+    height: 53rem;
+    align-self: center;
     text-align: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 69%;
-    margin-top: 6rem;
-    align-content: flex-start;
+    width: 100%;
     min-width: 10rem;
-    margin-bottom: 0rem;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
 
     ul{
         display: flex;
         height: 100%;
         width: 100%;
-        flex-direction: column;
-        justify-content: space-around;
         padding: 0rem;
+        flex-wrap: wrap;
+        gap: 12rem;
+        margin-bottom: 5rem;
+        flex-direction: column;
+        align-items: center;
     }
     li{
         list-style: none;
