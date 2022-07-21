@@ -2551,7 +2551,7 @@ p.medium {
 }
 .rent .four-block-wrapper .vector p {
   display: flex;
-  padding: 3rem 3rem 1rem 4rem;
+  padding: 2rem 0rem 1rem 2rem;
   align-items: center;
 }
 .rent .four-block-wrapper .img_one,
