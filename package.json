@@ -6,7 +6,8 @@
   "private": true,
   "scripts": {
     "start": "webpack-dev-server --open --live-reload --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +24,7 @@
     "css-minimizer-webpack-plugin": "^4.0.0",
     "dayjs": "^1.11.3",
     "file-loader": "^6.2.0",
+    "gh-pages": "^4.0.0",
     "html-loader": "^3.1.2",
     "html-webpack-plugin": "^5.5.0",
     "image-minimizer-webpack-plugin": "^3.2.3",
@@ -44,12 +46,6 @@
     "webpack-dev-server": "^4.9.2",
     "webpack-merge": "^5.8.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iDenSorta/Undertaking.git"
-  },
-  "bugs": {
-    "url": "https://github.com/iDenSorta/Undertaking/issues"
-  },
-  "homepage": "https://github.com/iDenSorta/Undertaking#readme"
+ 
+  "homepage": "https://idensorta.github.io/DIVO"
 }
