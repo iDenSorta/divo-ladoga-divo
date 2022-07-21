@@ -2253,7 +2253,7 @@ p.medium {
   margin-bottom: 0rem;
   background-image: url(/src/img/pattern_white_waves_patch-top.svg), url(/src/img/pattern_white_waves_patch.svg), url(/src/img/pattern_blue_waves.svg);
   background-repeat: repeat-x, repeat-x, repeat;
-  background-position-y: -15px, bottom, bottom;
+  background-position-y: -26px, bottom, bottom;
   background-position-x: 9px,9px,9px;
 }
 .services .img_one,
@@ -2541,7 +2541,7 @@ p.medium {
   margin-bottom: 0rem;
   background-image: url(/src/img/pattern_white_waves_patch-top.svg), url(/src/img/pattern_white_waves_patch.svg), url(/src/img/pattern_blue_waves.svg);
   background-repeat: repeat-x, repeat-x, repeat;
-  background-position-y: -15px, bottom, bottom;
+  background-position-y: -26px, bottom, bottom;
   background-position-x: 9px,9px,9px;
 }
 .rent .four-block-wrapper .vector {
@@ -3598,7 +3598,9 @@ span.small {
   top: 0;
   left: 0;
   width: 100%;
-  height: fit-content;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   z-index: 999;
   overflow: hidden;
   display: none;
