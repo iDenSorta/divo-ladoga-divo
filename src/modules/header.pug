@@ -1,25 +1,30 @@
-header
-    .wrapper
-        .header
-            .header-logo
-                
-            .upper    
-                .upper-text
-                    .header-img
-                        a(href="#")
-                        img(src="/src/img/header-ping.svg", alt="ping")
-                    span Респ. Карелия, г. Сортавала
-                a(href="tel:+7 999 345-55-55") +7 (999) 345-55-55
+header 
+    .header
+        .wrapper
+            .header-wrapper.desktop
+                .logo
+                    a(href="/") 
+                .menu-nav
+                    ul.nav
+                            li.nav-item
+                                a(href="").nav-link О нас
+                            li.nav-item
+                                a(href="").nav-link Туры
+                            li.nav-item
+                                a(href="").nav-link Маршруты
+                            li.nav-item
+                                a(href="").nav-link Услуги
+                            li.nav-item 
+                                a(href="").nav-link Контакты
+                            li.nav-item 
+                                a(href="").nav-link Дома
+                    .header-location-info
+                        .header-logo-img
+                            .header-logo-ping    
+                            span Респ. Карелия, г. Сортавала
+                        a(href="tel:+7 999 345-55-55") +7 (999) 345-55-55
 
-            .row-border
-            
-            nav
-                ul.nav
-                    li.nav-item#catalog
-                        a(href="").nav-link КАТАЛОГ
-                    li.nav-item#samples 
-                        a(href="").nav-link ПРИМЕРЫ РАБОТ
-                    li.nav-item#order 
-                        a(href="").nav-link ЗАКАЗАТЬ СВОЙ ДИЗАЙН
-                    li.nav-item#contacts 
-                        a(href="").nav-link КОНТАКТЫ
+                .menu__btn
+                    span
+                .btn.header_btn.desktop
+                        a(href="№") Забронировать 

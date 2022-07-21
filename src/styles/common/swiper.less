@@ -1,0 +1,218 @@
+// main: ../style.less
+
+
+.swiper-arrows-wrapper{
+        position: relative;
+        max-width: 381px;
+        margin: auto;
+        overflow: hidden;
+}
+.swiper-feedback{
+    width: 369px;
+    height: 230px;
+    max-width: 100%;
+  }
+.swiper-slide{
+    display: flex;
+}
+
+.swiper-button-prev{
+    left: 0px !important;
+}
+
+.swiper-button-next{
+    right: 6px !important;
+
+    
+   
+}
+
+
+
+.swiper-button-next.swiper-button-disabled::after{
+background-image: url(/src/img/nav-arrow-unactive-right.svg);
+background-repeat: no-repeat;
+transform: rotate(180deg);
+transition: 0.3s ease-in-out;     
+}
+
+
+.swiper-button-next::after{
+    font-family: 'Courier New', Courier, monospace !important;
+    color: rgba(0, 0, 0, 0)!important;
+    font-size: 2px !important;
+    width: 24px !important;
+    height: 24px !important;
+    background-image: url(/src/img/nav-arrow-left.svg);
+    background-repeat: no-repeat;
+    background-size: contain !important;
+    transition: 0.3s ease-in-out;     
+}
+
+
+
+.swiper-button-prev.swiper-button-disabled::after{
+    background-image: url(/src/img/nav-arrow-unactive-right.svg);
+    background-repeat: no-repeat;
+    transition: 0.3s ease-in-out;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out;   
+    }
+    
+    
+.swiper-button-prev::after{
+    font-family: 'Courier New', Courier, monospace !important;
+    color: rgba(0, 0, 0, 0)!important;
+    font-size: 2px !important;
+    width: 23px !important;
+    height: 24px !important;
+    background-image: url(/src/img/nav-arrow-left.svg);
+    background-size: contain !important;
+    transform: rotate(180deg);
+    transition: 0.3s ease-in-out;   
+}
+
+@media (min-width:@desktop){
+
+    .overlay-left{
+        width: inherit;
+        
+        
+    }
+    .overlay-left::before{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 332px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 17%);
+        z-index: 2;
+        overflow: visible;
+        animation: animate-left .5s;
+        animation-fill-mode: both;
+        
+        
+    
+
+    
+}
+
+.overlay-right{
+    width: inherit;
+    
+    
+}
+.overlay-right::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 332px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 83%, rgba(255,255,255,1) 90%, rgba(255,255,255,1) 100%);
+    z-index: 2;
+    overflow: visible;
+    animation: animate-right .5s;
+    animation-fill-mode: both;
+    
+    
+
+
+
+}
+
+    .swiper-arrows-wrapper{
+        position: relative;
+        max-width: unset;
+        width: auto;
+        overflow: hidden;
+        margin-right: -4rem;
+        .swiper-button-next::after,
+        .swiper-button-prev::after{
+            width: 48px !important;
+            height: 48px !important;
+            background-size: contain !important;
+            background-repeat: no-repeat !important;
+        }
+
+        .swiper-button-prev{
+            left: 16px !important;
+            width: 48px !important;
+            height: 48px !important;
+            z-index: 16;
+            
+        }
+        
+        .swiper-button-next{
+            right: 16px !important;
+            width: 48px !important;
+            height: 48px !important;
+            opacity: 1;
+        
+            
+           
+        }
+
+        .swiper-feedback{
+            width: auto;
+            margin-left: 5rem !important;
+            padding-right: 5rem !important;
+            height: 332px;
+            padding: 0.5rem;
+            overflow: hidden;
+
+            
+    
+            
+        }
+        
+       
+        
+        .swiper-button-next.swiper-button-disabled::before{
+            opacity: 0;
+            
+        }
+
+        .swiper-button-next.swiper-button-disabled::after{
+            opacity: 0.35;
+        }
+
+        
+        
+        .swiper-button-prev.swiper-button-disabled::after{
+            opacity: 0.35;
+        }
+    }
+
+}
+
+
+@keyframes animate-right {
+    from {
+        transform:translateX(200px);
+        opacity:1;
+    }
+    to {
+        transform: translateX(0px);
+        opacity:1;
+    }
+}
+
+
+@keyframes animate-left {
+    from {
+        transform:translateX(-200px);
+        opacity:1;
+    }
+    to {
+        transform: translateX(0px);
+        opacity:1;
+    }
+}

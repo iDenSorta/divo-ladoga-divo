@@ -1,0 +1,26 @@
+// main: ../style.less
+
+.clear {
+    display: table;
+    clear: both;
+}
+
+.wrapper {
+    width: 100%;
+    height: inherit;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+    &:after {
+        content: '';
+        &:extend(.clear);
+    }
+}
+
+
+@media (min-width: @desktop) {
+    .wrapper{
+        max-width: 1280px;
+    }
+
+}

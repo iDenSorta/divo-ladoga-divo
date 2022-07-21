@@ -1,21 +1,41 @@
-- var pageTitle = 'Undertaking'
+- var pageTitle = 'DIVO-LADOGA'
 
 doctype html
 html(lang="ru")
     head
+        meta(charset='utf-8')
         title=pageTitle
-        link(rel="stylesheet", href="../src/styles/style.css")
-    body 
-        include modules/header-and-banner
-        
-        include modules/catalog
-        include modules/specifies
-        include modules/examples
-        include modules/service
-        include modules/about-us
-        include modules/uq-design
-        include modules/footer
+        meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1")
+    body
 
+        include modules/header
+        include modules/top-banner
+        include modules/booking
+        include modules/tours
+
+        include modules/popups/tour-ladoga
+        include modules/popups/tour-ladval
+        include modules/popups/tour-valaam
+        include modules/popups/tour-individual
+
+        include modules/popups/tour-ruskeala
+        include modules/popups/tour-expedition
+        include modules/popups/tour-transfer
+        include modules/popups/tour-auto 
         
-    //
-       script(src="../dist/main.js")
+        include modules/popups/house_1
+        include modules/popups/house_2
+        include modules/popups/house_3
+        include modules/popups/house_4
+
+        include modules/about
+        include modules/routes
+        include modules/banner-mid
+        include modules/services
+        include modules/waterfalls
+        include modules/feedback
+        include modules/rent
+        include modules/book-now
+        include modules/contacts
+        include modules/footer
+    
