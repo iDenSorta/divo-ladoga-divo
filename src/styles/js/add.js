@@ -1,3 +1,5 @@
+
+// функция для добавления еще одного select'a по нажатию на "+ еще услуга" 
 function b(){
 
 let divadd = document.getElementById('divadd')
@@ -12,4 +14,6 @@ var i = 0;
 let a = document.getElementById('addlink');
 
 a.onclick = b;
+
+
 

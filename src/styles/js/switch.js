@@ -1,3 +1,4 @@
+//Кнопки смены карты маршрута 
 
 var radio = document.getElementsByName('route-switch');
 
