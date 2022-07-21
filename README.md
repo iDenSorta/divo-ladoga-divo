@@ -1,2 +1,1 @@
-# Undertaking
 # divo-ladoga
