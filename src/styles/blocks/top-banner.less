@@ -8,6 +8,14 @@
     position: relative;
     margin-top: -11rem;
     z-index: 0;
+
+    .top-img-wrapper
+    {
+        max-width: 600px;
+        height: inherit;
+        margin: auto;
+        padding: 2rem;
+    }
     .top-text{
         white-space: prewrap;
         text-align: left;
@@ -46,7 +54,7 @@
 .top-img{
     
     width: auto;
-    max-height:300px;
+    
     aspect-ratio: 1.9;
     border: 2px solid @color-black;
     box-sizing: border-box;
@@ -58,9 +66,8 @@
     background-size: cover;
 
     background-repeat: no-repeat;
-    margin-bottom: -6rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-bottom: -8rem;
+    
 
 }
 
@@ -104,6 +111,17 @@
     
 
             
+    }
+
+    .vertical-text{
+        span{
+            position: absolute;
+            top: 442px;
+            right: -140px;
+            transform: rotate(90deg);
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
     }
 
     .top-img{

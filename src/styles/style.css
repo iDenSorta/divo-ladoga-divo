@@ -346,6 +346,8 @@ span.black {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 2rem;
+  width: 346px;
+  margin: auto;
 }
 .four-block-wrapper .info-item {
   display: flex;
@@ -432,6 +434,7 @@ span.black {
     justify-content: space-between;
     gap: 0.5rem;
     margin: auto 5rem;
+    width: unset;
   }
   .four-block-wrapper .info-item {
     width: 24%;
@@ -1235,6 +1238,12 @@ span.black {
   margin-top: -11rem;
   z-index: 0;
 }
+.top-banner .top-img-wrapper {
+  max-width: 600px;
+  height: inherit;
+  margin: auto;
+  padding: 2rem;
+}
 .top-banner .top-text {
   white-space: prewrap;
   text-align: left;
@@ -1265,7 +1274,6 @@ span.black {
 }
 .top-img {
   width: auto;
-  max-height: 300px;
   aspect-ratio: 1.9;
   border: 2px solid #2C2C2C;
   box-sizing: border-box;
@@ -1274,9 +1282,7 @@ span.black {
   background-position: 100% 125%;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: -6rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-bottom: -8rem;
 }
 @media (min-width: 1024px) {
   .top-banner {
@@ -1314,6 +1320,14 @@ span.black {
   .top-banner p.medium {
     padding-right: 61rem;
     margin: auto 5rem 2rem;
+  }
+  .vertical-text span {
+    position: absolute;
+    top: 442px;
+    right: -140px;
+    transform: rotate(90deg);
+    font-size: 2.5rem;
+    font-weight: 500;
   }
   .top-img {
     width: 424px;
