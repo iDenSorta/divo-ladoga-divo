@@ -38,6 +38,9 @@
     "less": "^4.1.3",
     "less-loader": "^11.0.0",
     "mini-css-extract-plugin": "^2.6.1",
+    "postcss": "^8.4.14",
+    "postcss-loader": "^7.0.1",
+    "postcss-preset-env": "^7.7.2",
     "style-loader": "^3.3.1",
     "swiper": "^8.2.4",
     "tingle.js": "^0.16.0",
@@ -46,6 +49,5 @@
     "webpack-dev-server": "^4.9.2",
     "webpack-merge": "^5.8.0"
   },
- 
   "homepage": "https://idensorta.github.io/divo-ladoga-divo"
 }

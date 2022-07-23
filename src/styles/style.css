@@ -313,14 +313,8 @@ span.black {
     margin: 4rem 5rem 6rem;
   }
 }
-.wow {
-  opacity: 0;
-  transform: translateY(-8px);
-}
-.wow.animated {
-  opacity: 1;
-  transform: translateY(0px);
-  transition: all 1s 0.5s;
+.observer {
+  display: none;
 }
 .clear,
 .wrapper:after {

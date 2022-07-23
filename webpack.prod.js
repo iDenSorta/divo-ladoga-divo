@@ -8,6 +8,8 @@ const TerserPlugin = require("terser-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const { extendDefaultPlugins } = require("svgo");
+const postcss = require('postcss');
+const postcssPresetEnv = require('postcss-preset-env');
 
 module.exports = merge(common,{
 mode: "production",
@@ -40,7 +42,26 @@ output: {
                 test: /\.(less|css)$/,
                 use: [MiniCssExtractPlugin.loader,
                       "css-loader",
-                      "less-loader"]
+                      "less-loader",
+                      "postcss-loader",
+                    
+                      {
+                        loader: "postcss-loader",
+                        options: {
+                          postcssOptions: {
+                            plugins: [
+                              [
+                                "postcss-preset-env",
+                                {
+                                  // Options
+                                },
+                              ],
+                            ],
+                          },
+                        },
+                      },
+                    
+                    ]
                 },
 
             {
