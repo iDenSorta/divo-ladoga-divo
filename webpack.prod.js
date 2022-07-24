@@ -65,7 +65,7 @@ output: {
                 },
 
             {
-                test: /\.(jpe?g|png|gif)$/i,
+                test: /\.(jpe?g|png|gif|svg)$/i,
                 type: "asset",
             },
 
@@ -91,7 +91,23 @@ output: {
                   ["imagemin-mozjpeg", { Type: 75}],
                   ["imagemin-pngquant", { quality:[0.3, 0.5], verbose: true }],
                   // Svgo configuration here https://github.com/svg/svgo#configuration
-                  
+                  [
+                    "svgo",
+                    {
+                      name: 'preset-default',
+                      params: {
+                        overrides: {
+                          // customize default plugin options
+                          inlineStyles: {
+                            onlyMatchedOnce: false,
+                          },
+                
+                          // or disable plugins
+                          removeDoctype: false,
+                        },
+                      },
+                    },
+                  ],
                 ],
               },
             },
