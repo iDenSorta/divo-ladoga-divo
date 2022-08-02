@@ -996,6 +996,9 @@ span.black {
   align-items: center;
   height: 7rem;
 }
+.header .btn {
+  display: none;
+}
 .header .logo {
   position: static;
   width: 52px;
@@ -1099,9 +1102,6 @@ span.black {
 .header #nav-icon2.active span:nth-child(6) {
   left: calc(50% - 2px);
   top: 14px;
-}
-.btn {
-  display: none;
 }
 .menu-nav {
   display: flex;
