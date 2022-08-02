@@ -280,6 +280,15 @@ span.black {
 .header-location-info {
   display: none;
 }
+.wow {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+.wow.animated {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 1s 0.5s;
+}
 @media (min-width: 1024px) {
   #mobile {
     display: none;
