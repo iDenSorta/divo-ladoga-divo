@@ -3682,6 +3682,9 @@ span.small {
 .carousel__button {
   display: none;
 }
+.fancybox__slide {
+  padding: 0;
+}
 .popup {
   width: auto;
   height: auto;
