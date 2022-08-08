@@ -85,6 +85,9 @@ h3 {
   font-size: 16px;
   font-weight: bold;
 }
+a {
+  transition: all 0.2s;
+}
 p {
   font-size: 1.25rem;
   line-height: 12px;
@@ -129,6 +132,7 @@ span.black {
   border: 2px solid;
   align-items: center;
   background-color: #FFFFFF;
+  transition: all 0.2s;
 }
 .btn a {
   display: flex;
@@ -138,6 +142,24 @@ span.black {
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+button {
+  cursor: pointer;
+}
+button p {
+  font-family: 'Gilroy';
+  font-weight: normal;
+  font-display: swap;
+  display: flex;
+  font-style: normal;
+  height: inherit;
+  width: inherit;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  margin: 0;
 }
 .header_btn:hover,
 .form__btn:hover {
@@ -222,6 +244,34 @@ span.black {
 }
 .orange_item {
   background-color: #FCF3EB;
+}
+input[type=date] {
+  box-sizing: border-box;
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  height: 36px;
+  padding-left: 2rem;
+  padding-right: 1.5rem;
+  border: 1px solid #E0E0E0;
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: bold;
+}
+input[type=date]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+  opacity: 0;
 }
 .text_vector {
   display: flex;
@@ -1535,23 +1585,6 @@ span.black {
   background-size: contain;
   background-repeat: no-repeat;
   pointer-events: none;
-}
-.booking .book-date input[type=date] {
-  box-sizing: border-box;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  width: 100%;
-  height: 36px;
-  padding-left: 2rem;
-  padding-right: 1.5rem;
-  border: 1px solid #E0E0E0;
-  border-radius: 2px;
-  font-family: inherit;
-  font-size: 2rem;
-  font-weight: bold;
-}
-.booking .book-date input[type=date]::-webkit-calendar-picker-indicator {
-  opacity: 0;
 }
 .booking .book-date input#time19 {
   grid-column-start: 2;
@@ -3646,16 +3679,13 @@ p.medium {
 span.small {
   font-size: 5.5rem;
 }
+.carousel__button {
+  display: none;
+}
 .popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  max-height: 100%;
+  width: auto;
+  height: auto;
   z-index: 999;
-  overflow: hidden;
   display: none;
   background-color: transparent;
 }

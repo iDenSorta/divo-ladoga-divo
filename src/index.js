@@ -5,7 +5,7 @@ import "./styles/js/switch"
 
 import "./styles/js/add.js"
 
-
+import "./styles/js/tel_check.js"
 
 import "./styles/js/linky.js"
 

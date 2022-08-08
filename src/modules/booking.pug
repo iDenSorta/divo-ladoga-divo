@@ -36,13 +36,13 @@
                     input(type="text", name='book-name')#name
                     label(for="#name") Имя
                 .book-contact
-                    input(type="tel", name='book-tel')#tel
+                    input(class="tel", type="tel", name='book-tel')#tel
                     label(for="#tel") Телефон
                 span.grey.desktop 
                     a(href="#") Оставляя заявку вы соглашаетесь
                         br
                         | с политикой конфидециальности
-                .btn.form__btn
-                    a(href="№") Забронировать 
+                button(class="btn form__btn" type="submit" value="submit")
+                    p Забронировать 
 
                     
