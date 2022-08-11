@@ -9,9 +9,4 @@ import "./styles/js/tel_check.js"
 
 import "./styles/js/linky.js"
 
-
-
-
-import "./styles/js/scroll.js"
-
 import "./styles/js/observer.js"
