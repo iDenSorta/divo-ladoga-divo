@@ -44,12 +44,19 @@
         align-items: flex-end;
         justify-content: space-between;
 
+        .cross-wrapper{
+            position: relative;
+            width: 32px;
+            height: 32px;
+        }
+
         .cross_close_svg{
-            width: 20px;
-            height: 20px;
+            width: inherit;
+            height: inherit;
             background-image: url(/src/img/popup_logo_cross.svg);
             background-size:contain ;
             cursor: pointer;
+            position: fixed;
         }
     p{
         font-size: 2rem;
@@ -132,6 +139,12 @@
     background-image: url;
 }
 
+.cross-wrapper{
+    position: relative;
+    width: 32px;
+    height: 32px;
+}
+
 .popup_text_top{
     display: flex;
     justify-content: space-between;
@@ -141,6 +154,9 @@
         width: 50%;
         margin: 0;
     }
+
+    
+
     .cross_close{
         display: flex;
         flex-direction: column;
@@ -148,11 +164,12 @@
         justify-content: space-between;
 
         .cross_close_svg{
-            width: 20px;
-            height: 20px;
+            width: inherit;
+            height: inherit;
             background-image: url(/src/img/popup_logo_cross.svg);
             background-size:contain ;
             cursor: pointer;
+            z-index: 100;
         }
         p{
             font-size: 1.5rem;

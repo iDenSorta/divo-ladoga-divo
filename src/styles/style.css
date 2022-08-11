@@ -1993,6 +1993,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .vector {
   background-image: url(/src/img/info__vector_orange_1.svg);
 }
+.route-txt {
+  display: none !important;
+  transition: 1s !important;
+}
 .route-radio-wrapper {
   display: flex;
   margin-bottom: 3rem;
@@ -2191,6 +2195,7 @@ p.medium {
     gap: 0rem;
     width: 380px;
     margin: 19rem 4rem 4rem 5rem;
+    transition: 0.2s;
   }
   .routes-text-bg-wrapper .routes-text-wrapper p.big {
     font-size: 9rem;
@@ -3718,12 +3723,18 @@ span.small {
   align-items: flex-end;
   justify-content: space-between;
 }
+.popup .popup_text_top .cross_close .cross-wrapper {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
 .popup .popup_text_top .cross_close .cross_close_svg {
-  width: 20px;
-  height: 20px;
+  width: inherit;
+  height: inherit;
   background-image: url(/src/img/popup_logo_cross.svg);
   background-size: contain ;
   cursor: pointer;
+  position: fixed;
 }
 .popup .popup_text_top .cross_close p {
   font-size: 2rem;
@@ -3780,6 +3791,11 @@ span.small {
   .popup .popup-bg-wrapper {
     background-image: url;
   }
+  .popup .cross-wrapper {
+    position: relative;
+    width: 32px;
+    height: 32px;
+  }
   .popup .popup_text_top {
     display: flex;
     justify-content: space-between;
@@ -3797,11 +3813,12 @@ span.small {
     justify-content: space-between;
   }
   .popup .popup_text_top .cross_close .cross_close_svg {
-    width: 20px;
-    height: 20px;
+    width: inherit;
+    height: inherit;
     background-image: url(/src/img/popup_logo_cross.svg);
     background-size: contain ;
     cursor: pointer;
+    z-index: 100;
   }
   .popup .popup_text_top .cross_close p {
     font-size: 1.5rem;
